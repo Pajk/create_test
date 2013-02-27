@@ -1,0 +1,3 @@
+<% if @project.module_enabled?(:create_test) and @issue.tracker.name != 'Test' %>
+    <%= link_to l('create_test_button'), {:controller => 'create_test',:action => 'new',:project_id => @project,:copy_from => @issue}, :class => 'icon icon-copy' %>
+<% end %>

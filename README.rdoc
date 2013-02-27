@@ -1,0 +1,20 @@
+= create_test
+
+This is very simple Redmine 2.2 plugin, probably useless for all except me.
+
+It adds 'Create a test for this issue' link to every issue detail. It leads to the same form as 'Duplicate' link but it resets some of the issues attributes which I am lazy to reset manually everytime I am creating a test issue.
+
+So what it does:
+
+* sets tracker to Test
+* sets status to default status (New for me)
+* removes assignee, due_date, estimated_hours, done_ration
+* remove or resets start_date (depends on redmine settings)
+
+== How to install
+
+This plugin is probably compatible only with Redime 2.2, I did not test it with other version and it does not include any unit tests because of its simplicity and uselessness.
+
+* clone this repo to %redmine_root%/plugins/create_test directory.
+* restart server and enable create_test module on your project Settings->Modules page
+

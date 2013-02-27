@@ -1,0 +1,4 @@
+# English strings go here for Rails i18n
+en:
+  create_test_from_issue: Create a new test from an issue
+  create_test_button: Create a test for this issue
